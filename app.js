@@ -9,8 +9,8 @@ app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({extended: true}));
 
 app.get("/authors", function (req, res) {
-  db.author.findAll().then(function(authors){
-    res.render("authors/index", {authorList: authors});
+  db.authors.findAll().then(function(authors){
+    res.render("authors/index", {authorsList: authors});
   })
 });
 
