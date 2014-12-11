@@ -1,0 +1,23 @@
+<!DOCTYPE>
+<html>
+<head>
+  <title>Author</title>
+</head>
+<body>
+  <div>
+    <h2>
+      <%= author.firstName %>
+    </h2>
+    <h2>
+      <%= author.lastName %>
+    <h3>
+      <%= author.age %>
+    </h3>
+  </div>
+  <div>
+    <form action="/authors/<%= author.id %>?_method=DELETE" method="post">
+      <button class="delete">DELETE</button>
+    </form>
+  </div>
+</body>
+</html>
